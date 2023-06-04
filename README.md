@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+**Login System Documentation**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application called The Login System offers basic login capabilities. Users can log in by entering their email address and password. The user is shown a dashboard with their first and last names and a logout button upon successful authentication. For demo purposes, the system offers preconfigured accounts.
 
-## Available Scripts
+**Usage Example**
+To use the Login System in your React project, follow these steps:
 
-In the project directory, you can run:
+Install the required dependencies by running the following command:
+bash
 
-### `npm start`
+**npm install react react-dom @testing-library/react**
+Create a new React component, such as App.js, and copy the following code into it:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**import React from 'react';
+import { render, fireEvent } from '@testing-library/react';
+const Login = ({ handleLogin }) => {
 
-### `npm test`
+**};
+const Dashboard = ({ user, handleLogout }) => {
+**
+};
+const App = () => {
+ 
+};**
+****
+**export default App;**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**I have used two examples of following id and passwords**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+>>krishu@example.com
+>>password1
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+>>aashu@example.com
+>>password2
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+which will deny others if any invalid emails and passwords are given
 
-### `npm run eject`
+**Test Cases**
+To guarantee that the login flow is accurate and functional, the Login System provides test cases. Here are a few test-case examples:
+makes the login form appear: Checks to see that the login form is presented appropriately, including the login button, email, and password fields.
+logs a user in using the proper password and email: checks to see if the user is successfully signed in after inputting a valid email address and password.
+displays an error message when an incorrect email is entered: Verifies that an error message is displayed when an invalid email is entered.
+displays an error with an incorrect password: Verifies that an error message is displayed when a valid email is submitted with an invalid password.
+logs a user off
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Installation**
+To install and use the Login System, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the repository or download the source code files.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Navigate to the project directory in the terminal.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install the required dependencies by running the following command:
 
-## Learn More
+bash
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**npm install**
+Start the development server with the following command:
+bash
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**npm start**
+Access the application in your web browser at** http://localhost:3000.**
 
-### Code Splitting
+That's it! You can now integrate the Login System into your React project and customize it to suit your needs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
